@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    
+    
+ 
+    <div class="background" id="background">
+
+<!-- nav bar 
+<div class="nav-container">
+    <div class="nav">
+        <a class="navlink" href="#home"><img id="img1" class="navimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAEdUlEQVR4nO3cSYgcVRzH8RqTGNfRuMQdl7gQ3MGgiATUCC4hmIPoIYgHySmQo1ePQk6eJIKXgCiCIkZBFBVRMYK7GCSKMQuKcY2SuMX5eKgeM/S86ulJd1e97v5/YS7Dq/d+//+vXtWrf73qogiCYITBKryHbVjVtJ6xBRN4CIccZgqP4Kim9Y0VmMSzqnkRS5rWORZgObZ3MGOaL3FV03pHGqzDgUTy97X+2jmAdU3rHjmwsHVvSPEBLsC5eLeizWYc3XQcIwHOwTsVid6CY2e0XYxHK9q+j/ObjGXowUp8l0juH3iww3FVl7YfcFudMYwEyiXtRvydSOourOiij2vwVeL4Q3hYLI27AyfimYrLzks4ZR59TeK5ir5ewMmDjGXowWX4PJG8I37gc/gB8t9EvztwRcVx86L36DMDd+PXRKw/4fY+9H8zvk/0/zvuTbQfT0McXtJOJeL8CBf1cazzlHWvFJuxaEbb8TMEp+O1ihi34LgBjLkYj1eM+RbOarUbL0NwE75NxPYnNtYw/v04mBh/H26ZK+EjZYgel7R91LGiNWY7s7Qljh1+Q3ACnkokAN7AGQ1oOhUvV2gaXUNwCT5NxDq9pF3QoLZOS+PRMwRrsT8R5y9Y07S+abCmpSnF2ra2w2cIFijLFKkzbzuWN62xHVyMTxJ6p5SFy0WtdsNlCE7DKxVn25M4vmmNVeAYPFGh/U2cOVSG4AbsSQTzFzY0ra9bsKGluZ1ZsTWttRKsrwhiL25sWt98wXX4pmK25GuILqZ50xqPFOXl99WhMQTL8HFC5xQ2YWHTGntFWXPbJF1zg2VNayyKoihwF35OCPwN9zStr9+oXhrv17Y0rltYp4epL3B5Y+IGDC7FZxVXhPofcnUuNzyPk2oV1ADKMtDTFTl4HUvrEnItvk6I+Kc1YyZqEZIJylVlqlC6G9cPevBOJetbBzp4xqj7VYLypc7miun5Ns7u+6BDBpaq42Wb8rXntoqBYkfgDHTeYfkhLux1gKqNAQfxQJ/iGDlwn3LzRDs/OpING9LfXkyzA1cOII6RQr+2NGEJtlZMO5gccCwjg3KjXhVbzfUNC66W3n75PzXFMjJ0yqVOewiwWnpJG4b0wFz5bOV8derAvYnGs1ZXDcQ01HSTU+yebj/zxjLV1tdjRVGsrEX1eLGyKHM7k9knOu5szZKdZnwGFjOkN6ryp/yGZWcr53dM/3/OulO7CRMTE2NVq+qV+eYvPlrJjDAkM8KQzAhDMiMMyYwwJDPCkMwIQzIjDMmM7HYU1l2eya3yEDMkM8KQzAhDMiO7e0g7/b7G5/4KIWZIZoQhmRGGZEYYkhlhSGaEIZkRhmRGGJIZYUhmhCGZEYZkRhiSGWFIZoQhmRGGZEYYkhlhSGaEIZkRhmRGGJIZYUhmhCGZEYZkRhiSGWFIZoQhmRGGZEYYkhlhSGaEIZkRhmRGGJIZYUhmzPv3soLeiN/LGjK6MWTvwFWMD3vmatCNIeuLMKUf7CnKXAZBEARBEAS18x/EQu4BM0DuyQAAAABJRU5ErkJggg=="></a>
+        <a class="navlink" href="#about"><img id="img2" class="navimg" src="data:image/png;base64,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"></a>
+        <a class="navlink" href="#skills"><img id="img3" class="navimg" src="data:image/png;base64,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"></a>
+        <a class="navlink" href="#experience"><img id="img4" class="navimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADVklEQVR4nO2aSWsUQRiGny/uu9GLCCYmoLhcIt7dcDsEcUFEwR/gUbzoL1Avil68q2guEVERFYy4HPQgwYsGRTQq4sW4oOCa10PXkEnstqd7uqYTrAeG7pqp+vqtt6u/7p4qCAQCgUAg8L9iPoNLGg+sBzqA2RmbfwR6gZtm9qtobd6R1CGpT/XzRFJH2f3JhKR2SQMFdL7Ce0ltPrR6uQQkdQG7XPEMcBz4lDHMLGA/sNeVz5vZnmIUekTSBElf3Zm7Lym3yZJM0gMX64uinFIoTUUHBJqBqW7/jpkpbyDX9rYrTgPm1KntL3wYUH2WvhUQrzpG4SMgNaCkucBKomuyFpqr9pdJ2plHWHWMqv1OSR9qbPcReGhmA7mOKmmSpJOSfhSYzRvNd0knJE1K6mdsglKUuC4CW3K5N/q4BGyNy0dJBmwHul3xJXAEeAEM+lJYME1AG3AQWOi+22ZmF2tqLemcG0K/JC3yJNI7kha7PkjS2bg6SXeBBW7bb2bP/Mjzj5k9BfpdsSWuTpIB49y2iNtY2VT6EHvH8/EcMKYIBpQtoGyCAWULKJtgQNkCyiYYULaAsgkGlC2gbIIBZQsom8L/ZByJpAnA9JzNv5jZzyL1jMSrAZJWAVeAGTlDfJbUaWZ3C5Q1jLRLYEqd8VeTv/MAM4E1dWqY+q8f00ZAi6QlZtZXpwiAU8DnGuvOBPbVe0BJS0n4J6hCmgHjgKuSDhFNVWedpq6eIzhqZv2JNauQ1MqQAc2S2jMedzywAjhMyiivJQe0AV0ZBRTJfvfxQloO+A54zcKe+UnUh0TSRsBzYBOwFphH9ueGdcDGjG1GcgPoydhmEHgH3AKuM3x6bRipl4CZvSGa48+MpInUb8A9Mzuat7H078np8CTYwGM9klTr1FrDToxvA95U7dc6vT6S10UIScK3AaeJkueKnO17yZl/asWrAWb2m+hhZNTy3yfBJAN+u+3kRgnxSKUPsY/xSQZUEk+LPC1QbATuHaLVFV/F1UnKAd3Abvf7ZUkHgLG2TmARcIyhqf4LcZWSlsg0AdeADV6kNZ4bwOa4NUKxl4CZDQLbKfctsAgEnAd2JC3YTF3GKmk50cvQfMbOXWMQeAv0mNnjssUEAoFAIBAYnfwBdbNTgAMXFeIAAAAASUVORK5CYII="></a>
+        <a class="navlink" href="#contact"><img id="img5" class="navimg" src="./call.png"></a>
+    </div>
+    </div>
+-->
+        
+    <div class="name-container">
+
+    <div class="name-child">
+        <h1><span class="underline">Olivera Knežević</span></h1>
+    </div>
+
+    <div class="name-child">
+        <h2>HR Specialist · Talent Aquistion · Development Specialist</h2>
+        <p>Every good conversation starts with listening.</p>
+    </div>
+    
+    </div>
+
+    </div>
+
+
+
+<!-- About Me -->
+<section>
+<div class="about-container">
+
+    <div class="image" id="about">
+       <img src="./image/circle.png" />
+    </div>
+    
+    
+    <div class="about" id="about">
+        <h1><span id="title-underline">About M</span>e</h1>
+        <p>I am an ambitious, driven and outgoing Social Scientist with commercial flair and 
+            a strong quantitative background. Meeting new people and helping those around me 
+            have always been two of my biggest passions. 
+        <br>
+        <br>
+        A combination of my passion for people and quantitative background has helped me develop important skills to work with HR such as strategic workforce planning, change management, recruitment, employer branding, career counselling, coaching, events, product development and data analysis.</p>
+    </div>
+</div>
+</section>
+
+    <!-- Skills --> 
+<div class="skills-container" id="skills">
+   
+<div class="skill-container">
+    <h1><span id="title-underline">Skill</span>s</h1>     
+
+    <div class="skills">
+        <div class="each-skill1">
+            <h5>Leadership</h5>
+        </div>
+
+        <div class="each-skill2">
+            <h5>Confidentiality</h5>
+        </div>
+
+        <div class="each-skill3">
+            <h5>Adaptability</h5>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="each-skill4">
+            <h5>Time Management</h5>
+        </div>
+
+        <div class="each-skill5">
+            <h5>Teamwork</h5>
+        </div>
+
+        <div class="each-skill6">
+            <h5>Problem Solving</h5>
+        </div>
+    </div>
+</div>
+
+    <div class="languages">
+        <h1><span id="title-underline">Language</span>s</h1>     
+
+<div class="language">
+     <div class="each-skill4">
+     <h5>Norwegian (Native)</h5>
+</div>
+        
+<div class="each-skill5">
+        <h5>Bulgarian (Native)</h5>
+        </div>
+</div>        
+
+
+
+<div class="language">
+    <div class="each-skill3">
+    <h5>English (C2)</h5>
+</div>
+    
+<div class="each-skill2">
+    <h5>Spanish (C2)</h5>
+</div>
+
+
+</div>
+
+    </div>
+</div>
+
+
+<!-- Olivera's Resume -->
+<div class="experience-background">
+    <div class="experience" id="experience">
+
+<h1><span id="title-underline">Work Experie</span>nce</h1>
+
+<div class="jobs">
+        
+<!-- job 1 -->
+        <div class="job"> 
+                <div class="title"><h4><span id="title-underline">National Recrui</span>ter</h4></div>
+                <div class="company"><a  target=”_blank” href="https://www.transperfect.com/">TransPerfect; Language and technology solutions for global business</a></div>
+                <div class="date"><h5>November 2021 - Present</h5></div>
+                <div class="location"><h5>Remote</h5></div>
+                <div class="description">
+                    <p>Responsible for recruiting people in Norway for different studies for the company's project.</p>
+                </div>
+        </div>
+        <hr>
+        
+        <!-- job 2 -->
+        <div class="job"> 
+                <div class="title"><h4><span id="title-underline">Talent Acquisition and Development Specia</span>list</h4></div>
+                <div class="company"><a  target=”_blank” href="https://www.globalworking.net/">GLOBAL WORKING Recruitment</a></div>
+                <div class="date"><h5>September 2021 - Present</h5></div>
+                <div class="location"><h5>Remote</h5></div>
+                <div class="description">
+                    <p>Sourcing and recruiting for the private and public Norwegian healthcare sector. My main focus is to send nurses from all over Europe to Norway. My main tasks consist of dealing with a large number of applications including: job interviews, job analysis, data collection, HR administration, follow-up of customers and employees, and sales and marketing towards new and existing customers. In addition, there is also coordination involved related to the Development Program that company has implemented.</p>
+                </div>
+        </div>
+        <hr class="line">
+        
+        <!-- job 3 -->
+        <div class="job"> 
+                <div class="title"><h4><span id="title-underline">Account Receivable Anal</span>yst</h4></div>
+                <div class="company"><a  target=”_blank” href="https://www.ibm.com/es-es">IBM</a></div>
+                <div class="date"><h5> January 2021 - September 2021</h5></div>
+                <div class="location"><h5>Remote</h5></div>
+                <div class="description">
+                    <p>Support to the Cash Collection Team for the Nordics, which includes contacting customers over the phone, e-mail, and intranet in Norwegian to secure payments from IBM customers and resolve disputes, claims, and chargebacks, in addition to working with SAP systems.</p>
+                </div>
+        </div>
+        <hr>
+        
+        <!-- job 4-->
+        <div class="job"> 
+                <div class="title"><h4><span id="title-underline">IT Recruit</span>er</h4></div>
+                <div class="company"><a  target=”_blank” href="https://k2partnering.com/">K2 Partnering Solutions</a></div>
+                <div class="date"><h5>November 2019 - January 2020</h5></div>
+                <div class="location"><h5>Madrid, Spain</h5></div>
+                <div class="description">
+                    <p>Recruiting IT profiles for Enterprise Cloud Consultants, Developers, Architects, Managers, Senior Manager, and Directors for Global Consultancies in the Nordics where all communication by phone, video, and e-mail is conducted in Norwegian.</p>
+                </div>
+        </div>
+        <hr>
+        
+        <!-- job 5-->
+        <div class="job"> 
+                <div class="title"><h4><span id="title-underline">Interpre</span>ter</h4></div>
+                <div class="company"><a  target=”_blank” href="https://herotolk.no/">Hero Tolk AB (Freelance)</a></div>
+                <div class="date"><h5>September 2015 - June 2018</h5></div>
+                <div class= "location"><h5>Oslo Area, Norway</h5></div>
+                <div class="description">
+                    <p>Interpreting Serbian and Norwegian and vice versa where professional proficiency in both languages is highly imperative as many of the translations concern medical, official, and legal matters.</p>
+                </div>
+        </div>
+        
+            </div>
+        </div>
+            </section>
+
+
+<!-- Contact Form-->
+<div class="contact-form-container">
+<div class="contact-form" id="contact">
+         <h1>Contact Me</h1>
+         <p>I would love to work together.</p>
+        <form>
+             <input type="text" class="input-field" placeholder="Your Name">
+             <input type="email" class="input-field" placeholder="Your Email">
+             <input type="message" class="input-field" placeholder="Your Message...">
+              </input>
+              <button>Submit</button>
+        </form>
+</div>
+</div>
+
+
+            <div class="footer">
+                <div class="icon-container" style="font-size: 3rem;">
+                <div class="icon"><a href="mailto:olivera.knezevic@globalworking.net"><i class="far fa-envelope"></i></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/oliveraknezevic/"><i class="fab fa-linkedin"></i></a></div>
+                </div>
+            </div>
+
+            <footer>
+                <h7>Website designed and created by <a href="https://www.linkedin.com/in/shannon-mettry/">Shannon Mettry</a></h7>
+            </footer>
+
+
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>    
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=EB+Garamond&family=Inspiration&family=Josefin+Sans:wght@300&family=Just+Me+Again+Down+Here&family=Lexend+Giga:wght@500&family=Montserrat:wght@200&family=Nanum+Myeongjo:wght@800&family=Nunito:wght@200&family=Open+Sans:wght@300&family=Orbitron:wght@600&family=Oswald:wght@300&family=Playfair+Display:wght@400;500&family=Poppins:wght@200;400&family=Quicksand:wght@300;400&family=Raleway&family=Roboto+Mono:wght@100&family=Shizuru&family=Space+Mono&family=The+Girl+Next+Door&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2rem 2rem;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #05bfc9;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: rgb(255, 152, 170);
+  }
+
+
+/* Name */
+.background{
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    padding: 50px;
+    background: #05bfc9;    
+    background-size: cover;
+    z-index: auto;
+}
+
+/* #00B3BB */
+
+.name-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Apparel Black';
+    padding-top: .5rem;
+}
+
+.underline {
+    border-bottom: .6rem solid rgb(74, 41, 0);
+}
+
+.name-child h1 {
+    font-family: 'Apparel light';
+    padding-bottom: 7rem;
+    font-size: 8rem;
+    color: #fff;
+    z-index: 2;
+}
+
+.name-child h2{
+    font-family: 'Apparel Black It';
+    padding-bottom: .5rem;
+    font-size: 1.8rem;
+    color: rgb(91, 59, 48);
+
+}
+.name-child p{
+    font-family: 'Apparel Black';
+    font-size: 1.6rem;
+    color: #ffdaea;
+}
+
+.link-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10rem 10rem;
+    padding-top: 30rem;
+    font-family: 'Apparel Black';
+    font-size: 3rem;
+}
+
+.link-child a{
+    text-decoration: none;
+    color: rgb(91, 59, 48);
+}
+
+/* Nav */
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    background-color: #05bfc9;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navlink {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.navimg {
+    height: 3rem;
+    width: 3rem;
+}
+
+#img1 {
+    background: lightcoral;
+    border: 1px solid lightcoral;
+    padding: 6px 6px;
+    transition: transform .5s ease;
+}
+
+#img2 {
+    background: lightslategray;
+    border: 1px solid lightgray;
+    padding: 6px 6px;
+    transition: transform .5s ease;
+}
+
+#img3 {
+    background: lightpink;
+    border: 1px solid lightpink;
+    padding: 6px 6px;
+    transition: transform .5s ease;
+}
+
+#img4 {
+    background: purple;
+    border: 1px solid purple;
+    padding: 6px 6px;
+    transition: transform .5s ease;
+}
+
+
+img:hover {
+    transform: scale(1.5);
+}
+
+/* Class to apply on scroll with JS */
+
+
+
+
+/* About Me */
+
+.about-container{
+    display: flex;
+    height: 80vh;
+    padding-top: 5rem;
+    padding-bottom:  5rem;
+    gap: 4rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+
+.image {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 18rem;
+    width: 21rem;
+    border-radius: 50px;
+}
+
+
+.about h1 {
+    font-family: 'Apparel Bold';
+    padding: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color:rgb(145, 75, 1);
+}
+
+
+.about p{
+    text-align: justify;
+    font-family: 'Apparel Light';
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    font-family: 'Apparel Bold';
+    height: 75vh;
+    padding: 4rem;
+    background: #00B3BB;
+}
+
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills-container h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(250, 245, 245);
+    padding-bottom: 3rem;
+}
+
+.skills,
+.language {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: transform .5s ease;
+}
+
+.skills, .languages h5{
+    font-size: 1rem;
+}
+
+
+.each-skill:hover {
+    transform: scale(1.5);
+}
+
+.each-skill1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1rem solid rgb(208, 204, 91);
+    border-radius: 50px;
+    background: rgb(208, 204, 91);
+}
+
+.each-skill2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1rem solid rgb(37, 128, 184);
+    border-radius: 50px;
+    background:  rgb(37, 128, 184);
+}
+
+.each-skill3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1rem solid rgb(247, 176, 55);
+    border-radius: 50px;
+    background: rgb(247, 176, 55);
+}
+
+.each-skill4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1rem solid #dea3bf;
+    border-radius: 50px;
+    background: #dea3bf;
+}
+
+.each-skill5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1rem solid #a3dea4;
+    border-radius: 50px;
+    background: #a3dea4;
+}
+
+.each-skill6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1rem solid #dea3bf;
+    border-radius: 50px;
+    background: #dea3bf;
+}
+
+/* Work Experience */
+
+#title-underline {
+    border-bottom: .3rem solid black;
+}
+
+.experience-background {
+    margin-top: 3rem;
+}
+
+.experience {
+    padding-top: 3rem;
+    color: rgb(121, 85, 72);
+    margin: 0rem 6rem;}
+
+.experience h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Apparel Bold';
+}
+
+.job {
+    margin: 1.4rem 3rem;
+}
+
+.jobs {
+    padding: 1rem 5rem;
+}
+
+.title {
+    font-family: 'Apparel Bold';
+    font-size: 1.6rem;
+    padding-bottom: 1.3rem;
+
+}
+
+.company a{
+    font-family: 'Apparel Bold It';
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgba(68, 169, 170);
+}
+
+.date {
+    font-family: 'Apparel Bold';
+    font-size: 1rem;
+
+}
+
+.location {
+    font-family: 'Apparel Bold';
+    font-size: 1rem;
+}
+
+.description {
+    font-family: 'Apparel Bold';
+    padding-top: .5rem;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+ 
+
+
+
+/* Contact form */
+
+.contact-form {
+    background: #00B3BB;
+    padding: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Apparel Black';
+}
+
+.contact-form h1 {
+    padding: 1rem;
+    font-family: 'Apparel Black';
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(45, 50, 55);
+}
+
+.contact-form p {
+    font-family: 'Apparel black it';
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+}
+.input-field{
+    display: flex;
+    width: 400px;
+    height: 40px;
+    margin-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-family: 'Apparel light';
+}
+
+button {
+    margin-top: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: lightcoral;
+    font-family: 'Apparel bold';
+}
+
+
+
+
+
+
+
+/* Fav Icons */
+div.icon-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 15rem;
+    height: 90px;
+    background: #00B3BB;
+}
+
+
+div.icon {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon a {
+    border: 2px solid rgb(255, 251, 145);
+    border-radius: 45px;
+    padding: .3rem .3rem;
+    background: rgb(255, 251, 145);
+    text-decoration: none;
+    color: rgb(45, 50, 55);
+}
+
+/* Fav Icons */
+footer {
+    padding-top: 1rem;
+    font-family: 'Apparel Light';
+    background: #00B3BB;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
