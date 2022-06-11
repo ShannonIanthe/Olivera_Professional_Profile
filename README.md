@@ -11,4 +11,4 @@ This is a professional profile that I created for a client who was seeking a pos
   <ul>
     <li>HTML
       <li>CSS
-        <li>JavaScript
+
